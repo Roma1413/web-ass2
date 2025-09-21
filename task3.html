@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 Table and Form</title>
+    <!-- Link the external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header and Navbar (repeated on all pages) -->
+    <div id="header">
+        <h1>My Personal Website</h1>
+    </div>
+
+    <div id="navbar">
+        <a href="task1.html">Task 1</a>
+        <a href="task2.html">Task 2</a>
+        <a href="task3.html">Task 3</a>
+        <a href="task4.html">Task 4</a>
+    </div>
+    
+    <div class="container" id="table-form-tasks">
+        <section id="table-section">
+            <h2 id="table-heading">Task 3: Student Grades Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Student Grades</th> <!-- Merged across all 3 columns -->
+                    </tr>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight-row">
+                        <td>Jane Smith</td>
+                        <td>Web Dev</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Data Structures</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Emily White</td>
+                        <td>Algorithms</td>
+                        <td>A-</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>Database Management</td>
+                        <td>C</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="form-section">
+            <h2>Feedback Form</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <select id="role" name="role">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Are you enjoying this course?</label>
+                    <div>
+                        <input type="radio" id="yes" name="enjoy" value="yes" required>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="enjoy" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit Feedback">
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer (repeated on all pages) -->
+    <div id="footer">
+        <p>&copy; 2025 My Awesome Website. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
